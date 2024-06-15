@@ -26,7 +26,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background:url("../images/bg-intro-mobile.png"), #ff7a7a;
+  background:url("../images/bg-intro-desktop.png"), #ff7a7a;
   background-position: center;
   background-repeat: repeat;
 }
