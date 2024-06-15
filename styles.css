@@ -1,0 +1,217 @@
+.main__container {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__text {
+  color: #fff;
+  font-family: var(--font-family);
+
+  width: 45%;
+
+  padding: 4rem;
+}
+
+.intro__text h1 {
+  font-size: 2.3rem;
+  line-height: 2.6rem;
+}
+
+.intro__text p {
+  margin-top: 1.2rem;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+.intro__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 45%;
+
+  padding: 4rem;
+  text-align: center;
+}
+
+.intro__form-trail {
+  width: 100%;
+
+  background: var(--color-blue);
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 14px;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+
+  box-shadow: 1px 5px 5px rgba(0,0,0,0.3);
+}
+
+.intro__form-trail span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.intro__form-inputs {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 2rem;
+  border-radius: 0.7rem;
+
+  background: #fff;
+
+  box-shadow: 1px 5px 5px rgba(0,0,0,0.3);
+}
+
+.intro__form-inputs input {
+  width: 100%;
+
+  padding: 0.7rem 2rem;
+
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+  border-radius: 0.3rem;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-family);
+
+  color: var(--color-dark-blue);
+}
+
+.intro__form-inputs input:focus,
+.intro__form-inputs input:active {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+
+.intro__form-inputs button {
+  width: 100%;
+
+  background: var(--color-green);
+  color: #fff;
+  border: none;
+  outline: none;
+
+  font-weight: 500;
+  padding: 0.7rem 2rem;
+  border-radius: 0.3rem;
+  font-size: 14px;
+  font-family: var(--font-family);
+
+  cursor: pointer;
+}
+
+.intro__form-inputs button:hover {
+  background: hsl(154, 59%, 60%);
+} 
+
+.intro__form-inputs button:active {
+  background: hsl(154, 59%, 70%);
+} 
+
+.intro__form-inputs p {
+  font-size: 12px;
+  font-weight: 100;
+
+  color: var(--color-grayish-blue);
+}
+
+.intro__form-inputs p span {
+  font-weight: bold;
+
+  color: var(--color-red);
+
+  cursor: pointer;
+}
+
+/**** Error Design ****/
+
+.intro__form-inputs_input-box {
+  position: relative;
+  width: 100%;
+}
+
+.intro__form-inputs_input-box p {
+  display: none;
+
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+
+  color: var(--color-red);
+}
+
+.intro__form-inputs_input-box img {
+  display: none;
+  
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+
+/****  ****/
+/**** Checking Function Design ****/
+
+.intro__form-inputs_input-box.active p,
+.intro__form-inputs_input-box.active img {
+  display: block;
+}
+
+/**** ****/
+
+@media screen and (max-width: 1024px) {
+  .main__container {
+    flex-direction: column;
+    min-height: 90vh;
+    width: 90%;
+  }
+
+  .intro__text {
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+
+    text-align: center;
+  }
+
+  .intro__form {
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+  font-family: var(--font-family);
+  
+  color: #fff;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}

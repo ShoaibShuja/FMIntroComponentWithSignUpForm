@@ -1,0 +1,32 @@
+:root {
+  --color-red: hsl(0, 100%, 74%); 
+  --color-green: hsl(154, 59%, 51%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%); 
+  --color-grayish-blue: hsl(246, 25%, 77%);
+
+  --font-family: 'poppins', sans-serif;
+  --font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background:url("../images/bg-intro-mobile.png"), #ff7a7a;
+  background-position: center;
+  background-repeat: repeat;
+}
